@@ -1,0 +1,42 @@
+@mixin tablets {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+  }
+  @mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+.title__section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container__hero--title {
+    height: 100%;
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.5), rgba(70, 130, 180, 0.3)), url(./../PNG/bgtitle.jpg); 
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    @include phones() {
+        background: none;
+    }
+}
+.main__container {
+    height: 100%;
+    
+    width: 90%;
+}
+.main__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.short__description {
+    width: 50%;
+    font-size: 1.3rem;
+}
+.el__pluses__list {
+    list-style: url("./../PNG/stonepng.png") inside;
+}
