@@ -1,0 +1,15 @@
+.title__section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__container {
+  height: 100%;
+}
+
+.main__info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

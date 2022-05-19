@@ -1,0 +1,99 @@
+@mixin tablets {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+  }
+  @mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+.section {
+    padding-top: 10vh;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__hero {
+    display: flex;
+    justify-content: center;
+}
+.blocks__container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.5), rgba(70, 130, 180, 0.3)), url(./../PNG/bg.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 20px;
+    width: 90%;
+}
+.list__blocks {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // background-image: url("./../PNG/bg.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    padding: 2rem;
+    border-radius: 20px;
+   
+
+}
+.el__list {
+    color: rgb(151, 10, 10);
+    position: relative;
+    min-width: 6rem;
+    min-height: 9rem;
+    width: (100%/5) - (2%);
+    margin-right: 2%;
+    &:nth-child(5n){
+        margin-right: 0;
+    }
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: inset 5px 5px 10px 3px rgb(255, 255, 255);
+        background: linear-gradient(45deg, rgba(9, 95, 64, 0.318), hsla(209, 67%, 17%, 0.318)), url(./../PNG/default.jpg); 
+        
+    }
+    @include phones() {
+        width: (100%/2) - (2%);
+        margin-right: 2%;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        &:nth-child(5n){
+            margin-right: 2%;
+        }
+        
+    }
+
+
+    background-image: url("./../PNG/default.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+.linck__el__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.title {
+    font-size: 2.2rem;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+    padding-left: 2rem;
+    width: 40%;
+    @include phones(){
+        width: 90%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,78 @@
+@import "./header.scss";
+@import "./sectionHero.scss";
+@import "./sectiontypes.scss";
+@import "./titlesection.scss";
+@import "./formsection.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;700;800;900&family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+@mixin tablets {
+  @media screen and (max-width: 900px) {
+      @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: 460px) {
+      @content;
+  }
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  html,
+  body {
+    color: #fff;
+    font-size: 18px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgba(100, 149, 237, 1), rgba(27, 51, 70, 1)); 
+
+    font-family: "Alegreya Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    /**
+               * Для эксплорера
+               */
+               -ms-user-select: none;
+               /**
+                * Для мозилы
+                */
+               -moz-user-select: none;
+               /**
+                * Для конкверора
+                */
+               -khtml-user-select: none;
+               /**
+                * Для Сафари и Хрома
+                */
+               -webkit-user-select: none;
+    font-family: "Alegreya Sans", sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    @include phones(){
+        font-size: 16px;
+    }
+  }
+  p {
+    margin: 0;
+  }
