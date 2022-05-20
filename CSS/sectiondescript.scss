@@ -1,0 +1,43 @@
+@mixin tablets {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+  }
+  @mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+  .section__description {
+    @include phones() {
+        height: 100%;
+    }
+  }
+.section__description {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    @include phones() {
+        height: 100%;
+    }
+}
+.description__list {
+    width: 100%;
+}
+.el__list__desc {
+    list-style: url("./../PNG/stonepng.png") outside;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+.wrapper__img__icon {
+    width: 3rem;
+}
+.img__icon {
+    width: 100%;
+}

@@ -48,6 +48,7 @@
     position: relative;
     min-width: 6rem;
     min-height: 9rem;
+    overflow: hidden;
     width: (100%/5) - (2%);
     margin-right: 2%;
     &:nth-child(5n){
@@ -56,7 +57,6 @@
     &:hover {
         transform: scale(1.2);
         box-shadow: inset 5px 5px 10px 3px rgb(255, 255, 255);
-        background: linear-gradient(45deg, rgba(9, 95, 64, 0.318), hsla(209, 67%, 17%, 0.318)), url(./../PNG/default.jpg); 
         
     }
     @include phones() {
@@ -70,9 +70,6 @@
         }
         
     }
-
-
-    background-image: url("./../PNG/default.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 1rem;
@@ -84,6 +81,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    z-index: 2;
+}
+.img__stone {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    left: 0;
 }
 .title {
     font-size: 2.2rem;
@@ -96,4 +102,11 @@
         width: 90%;
         text-align: center;
     }
+}
+.descriptinon__el__list {
+    z-index: 1000;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    padding: 0.3rem 0.2rem;
 }
