@@ -445,6 +445,12 @@
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+@media screen and (max-width: 460px) {
+  .container__hero--title {
+    background: linear-gradient(45deg, rgba(34, 41, 55, 0.779), rgba(70, 130, 180, 0.3)), url(./../PNG/bgtitle.jpg);
+  }
+}
+
 .main__container {
   height: 100%;
   width: 90%;
