@@ -27,7 +27,7 @@
     padding: 3rem;
     display: flex;
     justify-content: center;
-    background: url("./../PNG/formbg.jpg") no-repeat;
+    background: linear-gradient(45deg, rgba(180, 206, 255, 0.759), rgba(70, 130, 180, 0.3)), url(./../PNG/formbg.jpg); 
     background-size: cover;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -64,6 +64,7 @@
     height: 1.7rem;
     width: 90%;
     border-radius: 5px;
+    margin-bottom: 0.6rem;
     &:focus {
         border: rgb(85, 172, 99) 2px solid;
         outline: none;
@@ -81,6 +82,11 @@
         border: rgb(85, 172, 99) 2px solid;
         outline: none;
     }
+}
+.title__input {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    line-height: normal;
 }
 .button__form {
     padding: .5rem 1.2rem;
