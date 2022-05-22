@@ -117,6 +117,13 @@
         text-align: center;
     }
 }
+.content__wrapper {
+    width: 90%;
+    height: 90%;
+    @include phones() {
+        width: 100%;
+    }
+}
 .descriptinon__el__list {
     z-index: 1000;
     color: #fff;

@@ -9,13 +9,13 @@
     align-items: center;
     height: 100vh;
     @include phones() {
-        height: 150vh;
+        height: 110vh;
     }
     
 }
 .container__cotacts {
     width: 90%;
-    height: 70%;
+    height: 90%;
     display: flex;
     background: linear-gradient(45deg, rgba(100, 149, 237, 0.5), rgba(70, 130, 180, 0.3)), url(./../PNG/bgtitle.jpg); 
     background-repeat: no-repeat;
@@ -24,6 +24,8 @@
     border-radius: 20px;
     @include phones() {
         flex-direction: column;
+        width: 100%;
+        padding: 1rem;
     }
     
 }

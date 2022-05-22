@@ -14,6 +14,9 @@
 }
 .title__text {
     font-size: 2.2rem;
+    @include phones() {
+        margin-bottom: 1rem;
+    }
 }
 
 .container__hero--title {
@@ -36,6 +39,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @include phones() {
+        justify-content :center
+    }
 }
 .short__description {
     width: 50%;
@@ -44,6 +50,7 @@
     @include phones(){
         font-size: 1.3rem;
         width: auto;
+        margin-bottom: 1rem;
     }
 }
 .el__pluses__list {

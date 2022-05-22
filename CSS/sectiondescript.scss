@@ -17,8 +17,12 @@
     width: 100%;
 
     @include phones(){
-        height: 150vh;
-        
+        height: 140vh;
+    }
+}
+.section__desc__main {
+    @include phones(){
+        height: 100vh;
     }
 }
 .container__description  {
