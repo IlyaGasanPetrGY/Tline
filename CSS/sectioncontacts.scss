@@ -5,6 +5,8 @@
   }
 .section__contacts {
     display: flex;
+    line-height: 1;
+    color: black;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -72,7 +74,7 @@
     font-size: 1.4rem;
     @include phones() {
         font-size: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.2rem;
         font-weight: 500;
     }
     

@@ -123,7 +123,7 @@
 }
 
 .list__header--mobile {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .wrapper__img__menu__header {
@@ -843,6 +843,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  line-height: 1;
+  color: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -956,9 +958,22 @@ h1 {
 @media screen and (max-width: 460px) {
   .el__rec {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     font-weight: 500;
   }
+}
+
+.underheader__section {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
