@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    @include phones() {
+        height: 150vh;
+    }
     
 }
 .container__cotacts {
@@ -18,6 +21,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    border-radius: 20px;
     @include phones() {
         flex-direction: column;
     }
@@ -66,7 +70,8 @@
     font-size: 1.4rem;
     @include phones() {
         font-size: 1rem;
-
+        margin-bottom: 0.5rem;
+        font-weight: 500;
     }
     
 }

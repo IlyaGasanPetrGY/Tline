@@ -770,6 +770,11 @@
           align-items: center;
   height: 100vh;
 }
+@media screen and (max-width: 460px) {
+  .section__contacts {
+    height: 150vh;
+  }
+}
 
 .container__cotacts {
   width: 90%;
@@ -783,6 +788,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 20px;
 }
 @media screen and (max-width: 460px) {
   .container__cotacts {
@@ -867,6 +873,8 @@
 @media screen and (max-width: 460px) {
   .el__rec {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
 }
 
