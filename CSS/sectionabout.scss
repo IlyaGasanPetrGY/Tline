@@ -21,6 +21,8 @@
 }
 .el__list__desc__about {
     margin-bottom: 2rem;
+    color: #fff;
+    text-align: justify;
     @include phones() {
         margin-bottom: 1rem;
     }

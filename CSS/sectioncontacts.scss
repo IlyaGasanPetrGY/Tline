@@ -7,18 +7,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
-    height: 20vh;
+    height: 100vh;
     
 }
 .container__cotacts {
     width: 90%;
+    height: 70%;
+    display: flex;
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.5), rgba(70, 130, 180, 0.3)), url(./../PNG/bgtitle.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    @include phones() {
+        flex-direction: column;
+    }
     
 }
 .list__contacts {
     display: flex;
+    flex: 5;
+    height: 50%;
     justify-content: space-around;
     @include phones() {
         justify-content: space-between;
+        
     }
+}
+.logo__img__contacts {
+    width: 90%;
+}
+.wrapper__img__logo__contacts {
+    flex: 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include phones() {
+        flex: 2;
+
+    }
+}
+.list__elemet__contacts {
+    display: flex;
+    flex-direction: column;
+}
+.title__name__el {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    @include phones() {
+        margin-bottom: 0.5rem;
+
+    }
+}
+.el__rec {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    @include phones() {
+        font-size: 1rem;
+
+    }
+    
 }

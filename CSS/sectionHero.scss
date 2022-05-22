@@ -8,6 +8,14 @@
         @content;
     }
   }
+.link_wrapp {
+    position: relative;
+}
+           
+.linck {
+    position: absolute;
+    top: 0;
+}
 .section {
     padding-top: 10vh;
     width: 100%;
@@ -95,18 +103,19 @@
     font-size: 2.2rem;
     padding: 0;
     font-weight: bold;
-    color: black;
+    color: #fff;
     padding-left: 2rem;
-    width: 40%;
+    width: 100%;
     @include phones(){
-        width: 90%;
+    
+
         text-align: center;
     }
 }
 .descriptinon__el__list {
     z-index: 1000;
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
     border-radius: 10px;
     padding: 0.3rem 0.2rem;
 }
