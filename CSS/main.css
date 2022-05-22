@@ -307,6 +307,7 @@
   color: #fff;
   padding-left: 2rem;
   width: 100%;
+  line-height: 1;
 }
 @media screen and (max-width: 460px) {
   .title {
@@ -561,6 +562,10 @@
   padding: 0;
 }
 
+.title__form__name__contact {
+  color: black;
+}
+
 .container__hero__section__form {
   width: 80%;
   display: -webkit-box;
@@ -672,8 +677,9 @@
 
 .button__form {
   padding: 0.5rem 1.2rem;
-  background: #896b08;
+  background: #3887e0;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 .hero__section {
@@ -778,6 +784,7 @@
 .title__form__name {
   text-align: center;
   color: #fff;
+  line-height: 1;
 }
 
 h1 {
@@ -822,6 +829,15 @@ h1 {
     margin-bottom: 1rem;
   }
 }
+.el__list__desc__about:nth-last-child(1) {
+  font-weight: bold;
+}
+
+.bold {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 900;
+}
 
 .section__contacts {
   display: -webkit-box;
@@ -843,7 +859,7 @@ h1 {
 
 .container__cotacts {
   width: 90%;
-  height: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

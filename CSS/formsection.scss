@@ -12,6 +12,9 @@
     height: 80vh;
     padding: 0;
 }
+.title__form__name__contact {
+    color: black;
+}
 .container__hero__section__form {
     width: 80%;
     display: flex;
@@ -90,6 +93,7 @@
 }
 .button__form {
     padding: .5rem 1.2rem;
-    background: rgb(137, 107, 8);
+    background: rgb(56, 135, 224);
     border-radius: 10px;
+    font-weight: bold;
 }

@@ -26,4 +26,12 @@
     @include phones() {
         margin-bottom: 1rem;
     }
+    &:nth-last-child(1){
+        font-weight: bold;
+    }
+}
+.bold {
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 900;
 }
