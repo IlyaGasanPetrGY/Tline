@@ -10,7 +10,6 @@
   }
 .block__elements__container {
     width: 90%;
-    padding: 2rem;
     @include phones() {
         padding: 0;
         width: 100%;

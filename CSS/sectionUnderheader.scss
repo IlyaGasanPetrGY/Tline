@@ -1,6 +1,27 @@
+@mixin tablets {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+  }
+  @mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
 .underheader__section {
-    height: 8vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phones() {
+        height: 8vh;
+    }
+}
+.container__underheader {
+    width: 90%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    @include phones() {
+        width: 100%;
+    }
 }

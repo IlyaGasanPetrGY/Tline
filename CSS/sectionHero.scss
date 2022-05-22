@@ -17,7 +17,6 @@
     top: 0;
 }
 .section {
-    padding-top: 10vh;
     width: 100%;
     min-height: 90vh;
     display: flex;
@@ -28,6 +27,7 @@
 .container__hero {
     display: flex;
     justify-content: center;
+    
     
 }
 .blocks__container {
@@ -130,4 +130,13 @@
     background: #a8c1db;
     border-radius: 10px;
     padding: 0.3rem 0.2rem;
+}
+.section__mr {
+    margin-bottom: 3rem;
+    @include phones() {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
