@@ -211,6 +211,11 @@
   border-radius: 20px;
   width: 90%;
 }
+@media screen and (max-width: 460px) {
+  .blocks__container {
+    width: 100%;
+  }
+}
 
 .list__blocks {
   display: -webkit-box;
@@ -294,14 +299,17 @@
 }
 @media screen and (max-width: 460px) {
   .title {
+    padding-left: 0;
     text-align: center;
   }
 }
 
 .descriptinon__el__list {
   z-index: 1000;
-  color: #000;
-  background: #fff;
+  color: #fff;
+  text-align: end;
+  font-size: 0.9rem;
+  background: #a8c1db;
   border-radius: 10px;
   padding: 0.3rem 0.2rem;
 }
@@ -313,6 +321,7 @@
 @media screen and (max-width: 460px) {
   .block__elements__container {
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -354,6 +363,11 @@
   height: 16rem;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 460px) {
+  .wrapper__img {
+    width: 100%;
+  }
 }
 
 .img__element {
@@ -717,6 +731,10 @@
 .title__form__name {
   text-align: center;
   color: #fff;
+}
+
+h1 {
+  padding: 0;
 }
 
 .description__list__about {

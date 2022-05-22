@@ -13,6 +13,8 @@
     padding: 2rem;
     @include phones() {
         padding: 0;
+        width: 100%;
+
     }
 }
 .list__block {
@@ -28,6 +30,7 @@
     margin-bottom: 2rem;
     @include phones() {
         flex-direction: column;
+        
     }
 }
 .wrapper__img {
@@ -37,6 +40,9 @@
     height: 16rem;
     overflow: hidden;
     position: relative;
+    @include phones() {
+        width: 100%;
+    }
 }
 .img__element { 
     position: absolute;
