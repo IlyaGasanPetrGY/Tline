@@ -17,16 +17,12 @@
     width: 100%;
 
     @include phones(){
-        height: 140vh;
+        height: 110vh;
     }
 }
-.section__desc__main {
-    @include phones(){
-        height: 100vh;
-    }
-}
+
 .container__description  {
-    width:  80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background: linear-gradient(45deg, rgba(54, 61, 75, 0.759), rgba(70, 130, 180, 0.3)), url(./../PNG/bgKar.jpg); 
@@ -39,6 +35,11 @@
         padding: 0;
     }
 
+}
+.container__description__main {
+    @include phones() {
+        height: 90%;
+    }
 }
   .section__description {
       flex-direction: column;
