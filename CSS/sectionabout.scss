@@ -1,0 +1,27 @@
+@mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+.description__list__about {
+    width: 90%;
+    font-weight: bold;
+}
+.container__hero__section__form {
+    align-items: center;
+    font-size: 1.3rem;
+    @include phones() {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+} 
+.list__desc__about {
+    display: flex;
+    flex-direction: column;
+}
+.el__list__desc__about {
+    margin-bottom: 2rem;
+    @include phones() {
+        margin-bottom: 1rem;
+    }
+}

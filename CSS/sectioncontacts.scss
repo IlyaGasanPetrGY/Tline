@@ -1,0 +1,24 @@
+@mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+.section__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    height: 20vh;
+    
+}
+.container__cotacts {
+    width: 90%;
+    
+}
+.list__contacts {
+    display: flex;
+    justify-content: space-around;
+    @include phones() {
+        justify-content: space-between;
+    }
+}
