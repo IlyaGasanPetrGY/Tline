@@ -50,6 +50,9 @@
 .img__element { 
     width: 16rem;
     height: 16rem;
+    @include phones() {
+        width: 100%;
+    }
 }
 .wrapper__content__el {
     flex: 3;
