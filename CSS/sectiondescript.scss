@@ -103,6 +103,7 @@ h1 {
 .desc {
     @include phones() {
         flex: 4;
+        text-align: start;
 
     }
 }
@@ -123,4 +124,9 @@ h1 {
     
 .container__description__width {
     width: 100%;
+}
+.el__list__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
