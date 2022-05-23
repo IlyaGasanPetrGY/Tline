@@ -533,8 +533,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 460px) {
   .main__info {
@@ -548,6 +549,7 @@
   width: 50%;
   font-size: 1.8rem;
   font-weight: 500;
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 460px) {
   .short__description {
@@ -602,7 +604,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(45deg, rgba(180, 206, 255, 0.759), rgba(70, 130, 180, 0.3)), url(./../PNG/formbg.jpg);
+  background: linear-gradient(45deg, rgba(192, 210, 243, 0.759), rgba(97, 175, 238, 0.3)), url(./../PNG/formbg.jpg);
   background-size: cover;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -754,6 +756,7 @@
 }
 
 .el__list__desc {
+  list-style: decimal;
   list-style: url("./../PNG/stonepng.png") outside;
   font-weight: bold;
   font-size: 1.4rem;
@@ -825,6 +828,20 @@ h1 {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+.el__list__desc {
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.list__blocks {
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.container__description__width {
+  width: 100%;
 }
 
 .description__list__about {
@@ -944,9 +961,9 @@ h1 {
 }
 
 .wrapper__img__logo__contacts {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,6 +991,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 1rem;
 }
 
 .title__name__el {
@@ -1022,9 +1040,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media screen and (max-width: 460px) {
   .container__underheader {

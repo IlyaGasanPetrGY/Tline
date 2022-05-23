@@ -52,7 +52,10 @@
     display: flex;
     justify-content: center;
 }
+
 .el__list__desc {
+    list-style:decimal;
+
     list-style: url("./../PNG/stonepng.png") outside;
     font-weight: bold;
     font-size: 1.4rem;
@@ -108,4 +111,16 @@ h1 {
         flex: 1;
 
     }
+}
+.el__list__desc {
+    list-style:circle;
+    list-style-position: outside; 
+}
+.list__blocks {
+    list-style:circle;
+    list-style-position: outside; 
+}
+    
+.container__description__width {
+    width: 100%;
 }

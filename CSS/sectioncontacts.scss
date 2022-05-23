@@ -45,7 +45,7 @@
     width: 90%;
 }
 .wrapper__img__logo__contacts {
-    flex: 3;
+    flex: 5;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -58,6 +58,7 @@
 .list__elemet__contacts {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 .title__name__el {
     margin-bottom: 2rem;
