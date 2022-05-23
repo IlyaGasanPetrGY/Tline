@@ -97,3 +97,15 @@ h1 {
 .container__hero {
     padding: 0;
 }
+.desc {
+    @include phones() {
+        flex: 4;
+
+    }
+}
+.wrapper__img__icon {
+    @include phones() {
+        flex: 1;
+
+    }
+}
