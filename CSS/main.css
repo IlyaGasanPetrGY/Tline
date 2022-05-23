@@ -1083,6 +1083,64 @@ h1 {
   }
 }
 
+.dropdown__window {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(68, 68, 68, 0.389);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100000;
+  display: none;
+}
+
+.container__window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #c0d2f3, #61afee), url(./../PNG/formbg.jpg);
+  padding: 2rem;
+  width: 40%;
+  border-radius: 20px;
+  height: 30%;
+}
+@media screen and (max-width: 460px) {
+  .container__window {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.title__window {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.button__for__escape {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #77852f;
+  border-radius: 20px;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

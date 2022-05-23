@@ -1,0 +1,42 @@
+@mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+  }
+.dropdown__window {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(68, 68, 68, 0.389);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    display: none;
+}
+
+.container__window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(192, 210, 243), rgb(97, 175, 238)), url(./../PNG/formbg.jpg); 
+    padding: 2rem;  
+    width: 40%;
+    border-radius: 20px;
+    height: 30%;
+    @include phones() {
+        width: 100%;
+        text-align: center;
+    }
+}
+.title__window {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.button__for__escape {
+    padding: 1rem 2rem;
+    width: fit-content;
+    background: rgb(119, 133, 47);
+    border-radius: 20px;
+}

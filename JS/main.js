@@ -24,6 +24,7 @@ function ClickText4() {
 function ClickText5() {
     wrapers4.toggleClass("short__description__content__wrapeer--active");
 }
+var dropdownwindow;
 var NAME;
 var Nomber;
 var Email;
@@ -36,8 +37,7 @@ btn.on("click", e => {
         Nomber = document.getElementById('input__row').value;
         Email = document.getElementById('email').value;
         Textarea = document.getElementById('message').value;
-
-
+        dropdownwindow = document.getElementById('dropdown__window').style.display = "flex";
         console.log (NAME+ ' '+ Nomber + ' ' + Email + ' ' + Textarea)
         document.getElementById('name').value = "Отправленно";
         document.getElementById('input__row').value = "Отправленно";
@@ -54,3 +54,10 @@ function ValidPhone(f) {
     console.log (valid);
     return valid; 
 }
+var btnclose = $("#change");
+
+btnclose.on("click", e => {
+    e.preventDefault();
+    dropdownwindow = document.getElementById('dropdown__window').style.display = "none";
+
+})
