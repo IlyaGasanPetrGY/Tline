@@ -9,11 +9,16 @@
     }
   }
 .section__form {
-    height: 80vh;
+    height: 100vh;
     padding: 0;
 }
 .title__form__name__contact {
     color: black;
+    background: rgba(255, 255, 255, 0.447);
+    padding: 0 1rem;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
 }
 .container__hero__section__form {
     width: 100%;
